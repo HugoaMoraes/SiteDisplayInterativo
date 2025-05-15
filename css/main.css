@@ -4635,6 +4635,12 @@ body.search-is-visible {
     right: 40px; /* Ajuste a posição horizontal */
 }
 
+@media only screen and (max-width: 400px) {
+    .whatsapp {
+        right: 30px;
+    }
+}
+
 .whatsapp a {
     text-decoration: none;
     border: 0 none;
