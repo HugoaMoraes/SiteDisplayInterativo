@@ -4673,7 +4673,34 @@ body.search-is-visible {
 /* Notificação */
 .notification-col {
     display: none;
+    position: fixed;
+    top: 10rem;
+    right: 30px;
+    width: 350px;
+    max-width: 90vw;
+    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.5s cubic-bezier(.4,0,.2,1), transform 0.5s cubic-bezier(.4,0,.2,1);
 }
+
+.notification-col.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 500px) {
+    .notification-col {
+        top: 10 rem;
+        right: 8px;
+        width: 95vw;
+        max-width: 95vw;
+    }
+}
+
 .hideit {
     display: none !important;
 }

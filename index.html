@@ -538,11 +538,11 @@
                         <label for="sampleRecipientInput">Assunto</label>
                         <div class="cl-custom-select">
                             <select class="full-width" id="subject">
-                                <option value="Option 1">Perguntas</option>
-                                <option value="Option 2">Suporte</option>
-                                <option value="Option 3">Problema técnico</option>
-                                <option value="Option 4">Erro login</option>
-                                <option value="Option 5">Outros</option>
+                                <option value="Perguntas">Perguntas</option>
+                                <option value="Suporte">Suporte</option>
+                                <option value="Problema técnico">Problema técnico</option>
+                                <option value="Erro login">Erro login</option>
+                                <option value="Outros">Outros</option>
                             </select>
                         </div>
                     </div>
@@ -550,24 +550,6 @@
                     <textarea class="full-width" placeholder="Sua Mensagem" id="message"></textarea>
                     <input class="btn--primary full-width" type="submit" value="Enviar">
                 </form>
-
-            </div>
-
-            <div class="col-six tab-full notification-col">
-
-                <h3>Notificação</h3>
-
-                <br>
-
-                <div class="alert-box alert-box--error hideit">
-                    <p>Ops! O e-mail não foi enviado. Tente novamente em instantes!.</p>
-                    <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
-                </div><!-- /error -->
-
-                <div class="alert-box alert-box--success hideit">
-                    <p>Tudo certo! Seu e-mail foi enviado com sucesso.</p>
-                    <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
-                </div><!-- /success -->
 
             </div>
 
@@ -658,6 +640,20 @@
         <div class="whatsapp">
             <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=5561986391903" target="_blank"><i
                     class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+        <div class="notification-col">
+
+            <div class="alert-box alert-box--error hideit">
+                <p>Ops! O e-mail não foi enviado. Tente novamente em instantes!.</p>
+                <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+            </div><!-- /error -->
+
+            <div class="alert-box alert-box--success hideit">
+                <p>Tudo certo! Seu e-mail foi enviado com sucesso.</p>
+                <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+            </div><!-- /success -->
+
         </div>
 
     </footer> <!-- end s-footer -->

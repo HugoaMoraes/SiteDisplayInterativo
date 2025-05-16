@@ -50,8 +50,9 @@ function sendMmail(event) {
 // Função para exibir alertas com Bootstrap
 function showAlert(message, type) {
     const notificationCol = document.querySelector('.notification-col');
-    if (notificationCol) notificationCol.style.display = 'block';
+    if (!notificationCol) return;
 
+    // Atualiza mensagem e tipo
     const errorBox = notificationCol.querySelector('.alert-box--error');
     const successBox = notificationCol.querySelector('.alert-box--success');
     errorBox.classList.add('hideit');
@@ -65,16 +66,22 @@ function showAlert(message, type) {
         errorBox.classList.remove('hideit');
     }
 
+    // Animação de entrada
+    notificationCol.style.display = 'block';
+    setTimeout(() => notificationCol.classList.add('show'), 10);
+
     // Fechar ao clicar no X
-    notificationCol.querySelectorAll('.alert-box__close').forEach((btn) => {
+    notificationCol.querySelectorAll('.alert-box__close').forEach(btn => {
         btn.onclick = function () {
-            notificationCol.style.display = 'none';
+            notificationCol.classList.remove('show');
+            setTimeout(() => notificationCol.style.display = 'none', 500);
         };
     });
 
     // Esconde automaticamente após 6 segundos
     setTimeout(() => {
-        notificationCol.style.display = 'none';
+        notificationCol.classList.remove('show');
+        setTimeout(() => notificationCol.style.display = 'none', 500);
     }, 6000);
 }
 
