@@ -1157,8 +1157,6 @@ body[data-aos-easing='ease-in-out-quart'] [data-aos] {
     transform: perspective(2500px) rotateX(0);
 }
 
-/*# sourceMappingURL=aos.css.map*/
-
 /* ===================================================================
  * # slick slider
  * http://kenwheeler.github.io/slick/
@@ -1643,4 +1641,3 @@ ol.linenums {
     margin-top: 0;
     margin-bottom: 0;
 }
-/*# sourceMappingURL=vendor.css.map */
