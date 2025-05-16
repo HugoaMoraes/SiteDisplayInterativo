@@ -4669,3 +4669,11 @@ body.search-is-visible {
     color: var(--background-color); /* Cor ao passar o mouse */
     background-color: var(--primary-color);
 }
+
+/* Notificação */
+.notification-col {
+    display: none;
+}
+.hideit {
+    display: none !important;
+}

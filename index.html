@@ -41,6 +41,11 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Email JS
+    ================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" async></script>
+
+
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -520,15 +525,19 @@
 
                 <h3>Preencha o formulário</h3>
 
-                <form>
+                <form onsubmit="sendMmail(event);">
+                    <div>
+                        <label for="sampleNameInput">Seu nome</label>
+                        <input class="full-width" id="sendername" type="text" placeholder="Seu nome">
+                    </div>
                     <div>
                         <label for="sampleInput">Seu email</label>
-                        <input class="full-width" type="email" placeholder="nome@email.com" id="sampleInput">
+                        <input class="full-width" id="to" type="email" placeholder="nome@email.com">
                     </div>
                     <div>
                         <label for="sampleRecipientInput">Assunto</label>
                         <div class="cl-custom-select">
-                            <select class="full-width" id="sampleRecipientInput">
+                            <select class="full-width" id="subject">
                                 <option value="Option 1">Perguntas</option>
                                 <option value="Option 2">Suporte</option>
                                 <option value="Option 3">Problema técnico</option>
@@ -537,18 +546,28 @@
                             </select>
                         </div>
                     </div>
-
                     <label for="exampleMessage">Mensagem</label>
-                    <textarea class="full-width" placeholder="Sua Mensagem" id="exampleMessage"></textarea>
-
-                    <label class="add-bottom">
-                        <input type="checkbox">
-                        <span class="label-text">Enviar uma copia para mim</span>
-                    </label>
-
-                    <input class="btn--primary full-width" type="submit" value="Em Breve" style="cursor: not-allowed;">
-
+                    <textarea class="full-width" placeholder="Sua Mensagem" id="message"></textarea>
+                    <input class="btn--primary full-width" type="submit" value="Enviar">
                 </form>
+
+            </div>
+
+            <div class="col-six tab-full notification-col">
+
+                <h3>Notificação</h3>
+
+                <br>
+
+                <div class="alert-box alert-box--error hideit">
+                    <p>Ops! O e-mail não foi enviado. Tente novamente em instantes!.</p>
+                    <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+                </div><!-- /error -->
+
+                <div class="alert-box alert-box--success hideit">
+                    <p>Tudo certo! Seu e-mail foi enviado com sucesso.</p>
+                    <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+                </div><!-- /success -->
 
             </div>
 
@@ -649,5 +668,6 @@
     <script src="js/plugins.js"></script>
     <script rel="preload" src="js/main.js"></script>
     <script src="js/img.js"></script>
+    <script src="js/email.js"></script>
 
 </body>
