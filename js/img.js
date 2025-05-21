@@ -1,11 +1,11 @@
 $(document).ready(function () {
     // Array de URLs das imagens
     const images = [
-        'images/home/bg1.webp',
-        'images/home/bg2.webp',
-        'images/home/bg3.webp',
-        'images/home/bg4.webp',
-        'images/home/bg5.webp',
+        'images/home/new1.webp',
+        'images/home/new2.webp',
+        'images/home/new3.webp',
+        'images/home/new4.webp',
+        'images/home/new5.webp',
     ];
 
     let currentIndex = 0; // Índice da imagem atual

@@ -2008,7 +2008,7 @@ input::-moz-focus-inner {
     content: '';
     width: calc(50% - 200px);
     height: 100vh;
-    background-image: url(images/home/bg1.webp);
+    background-image: url(images/home/new1.webp);
     background-origin: center;
     background-position: center center; /* Centraliza a imagem no meio */
     background-repeat: no-repeat;

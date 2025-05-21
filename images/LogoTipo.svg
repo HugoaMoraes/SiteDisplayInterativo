@@ -3,13 +3,13 @@
 <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F6E05E;}
+	.st0{fill:#FDC500;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:40;stroke-linecap:round;stroke-linejoin:round;}
 </style>
 <g>
 	<circle class="st0" cx="540" cy="540" r="530"/>
 	<g>
-		<path class="st1" d="M352.9,424.5h374.1c25.4,0,46.2,20.8,46.2,46.2v256.3c0,25.4-20.8,46.2-46.2,46.2H352.9
+		<path class="st1" d="M352.9,424.5H727c25.4,0,46.2,20.8,46.2,46.2V727c0,25.4-20.8,46.2-46.2,46.2H352.9
 			c-25.4,0-46.2-20.8-46.2-46.2V470.7C306.7,445.3,327.5,424.5,352.9,424.5z"/>
 		<polyline class="st1" points="655.5,306.7 540,424.5 422.2,306.7 		"/>
 	</g>
