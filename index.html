@@ -408,14 +408,23 @@
             </div>
         </div> <!-- end section-header -->
 
+        <div class="pricing-switcher align-center">
+            <span class="switch-label">Mensal</span>
+            <label class="switch">
+                <input type="checkbox" id="planSwitcher">
+                <span class="slider"></span>
+            </label>
+            <span class="switch-label">Anual <small style="color:#fdc500;">(+15% OFF)</small></span>
+        </div>
+
         <div class="row plans block-1-3 block-m-1-2 block-tab-full stack">
 
             <div class="col-block item-plan" data-aos="fade-up">
                 <div class="item-plan__block">
 
                     <div class="item-plan__top-part">
-                        <h3 class="item-plan__title">Básico </h3>
-                        <p class="item-plan__price">R$49</p>
+                        <h3 class="item-plan__title">Básico</h3>
+                        <p class="item-plan__price" data-month="49" data-year="499.80">R$49</p>
                         <p class="item-plan__per">/mês</p>
                     </div>
 
@@ -437,7 +446,7 @@
 
                     <div class="item-plan__top-part">
                         <h3 class="item-plan__title">Pro</h3>
-                        <p class="item-plan__price">R$99</p>
+                        <p class="item-plan__price" data-month="99" data-year="999.80">R$99</p>
                         <p class="item-plan__per">/mês</p>
                     </div>
 
@@ -459,7 +468,7 @@
 
                     <div class="item-plan__top-part">
                         <h3 class="item-plan__title">Avançado </h3>
-                        <p class="item-plan__price">$249</p>
+                        <p class="item-plan__price" data-month="249" data-year="2499.80">R$249</p>
                         <p class="item-plan__per">/mês</p>
                     </div>
 
@@ -669,5 +678,6 @@
     <script rel="preload" src="js/main.js"></script>
     <script src="js/img.js"></script>
     <script src="js/email.js"></script>
+    <script src="js/value.js"></script>
 
 </body>
