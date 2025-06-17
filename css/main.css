@@ -4740,16 +4740,64 @@ body.search-is-visible {
     width: 22px;
     left: 3px;
     bottom: 3px;
-    background-color: white;
+    background-color: var(--background-color);
     transition: 0.4s;
     border-radius: 50%;
 }
 input:checked + .slider {
-    background-color: #fdc500;
+    background-color: var(--primary-color);
 }
 input:checked + .slider:before {
     transform: translateX(22px);
 }
 .switch-label {
     font-weight: 600;
+}
+
+.selo-teste-gratis {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 160px;
+    height: 160px;
+    pointer-events: none;
+}
+
+.selo-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+    animation: selo-spin 16s linear infinite;
+}
+
+@keyframes selo-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.selo-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    /* Sem background, sem borda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+}
+
+.selo-inner strong {
+    font-size: 2rem;
+    color: var(--tertiary-color);
+    font-weight: 700;
+    letter-spacing: 1px;
 }
